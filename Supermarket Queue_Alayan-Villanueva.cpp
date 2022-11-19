@@ -1,4 +1,4 @@
-// Queue in a Supermarket in C++ - Villanueva
+// Queue in a Supermarket in C++
 #include<iostream>
 #include<fstream>
 #include<string>
@@ -83,20 +83,20 @@ void Info(Queue n, int index){
 	
 	//Total Decarting Time 
 	deCart = n.item * 0.5;
-	cout << "Total De-Carting Time: " << n.item << " * 0.5 = " << deCart << endl;
+	cout << "Total De-Carting Time: "  << deCart << endl;
 	
 	//Total Scanning Time
 	scanTime =  n.item * 0.5;
-	cout << "Total Scanning Time: " << n.item << " * 0.5 = " << scanTime << endl;
+	cout << "Total Scanning Time: " << scanTime << endl;
 	
 	//Prefered Packaging and the Total Packing Time
 	if(n.prefPack == "box"){
 		packTime = (n.item * 0.50) + (n.numPack * 10);
-		cout << "Total Packing Time: (" << n.item << " * 0.5) + (" << n.numPack << " * 10) = " << packTime << endl;
+		cout << "Total Packing Time: " << packTime << endl;
 	} 
 	else if (n.prefPack == "bag") {
 		packTime = (n.item * 0.50) + (n.numPack * 5);
-		cout << "Total Packing Time: (" << n.item<< " * 0.5) + (" << n.numPack << " * 5) = " << packTime << endl;
+		cout << "Total Packing Time: " << packTime << endl;
 	}
 	
 	//Preferred Payment and Cash Type
@@ -117,7 +117,7 @@ void Info(Queue n, int index){
 	
 	//Total Receipt Printing Time
 	reciTime = (n.item * 0.3) + 2;
-	cout << "Total Receipt Printing Time: (" << n.item << " * 0.5) + 2 = " << reciTime << endl;
+	cout << "Total Receipt Printing Time: " << reciTime << endl;
 	
 	//Idle Time
 	if(index == 0){
